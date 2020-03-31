@@ -7,6 +7,9 @@ console.log(action);
 
 const actionFactory = (action_type, action_item) => ({ type: action_type, payload: action_item });
 
+module.exports = actionFactory;
+
+// test
 console.log(actionFactory('CREATE_ITEM',  'item1'));
 console.log(actionFactory('CREATE_ITEM', 'item2'));
 console.log(actionFactory('CREATE_ITEM', 'item3'));
